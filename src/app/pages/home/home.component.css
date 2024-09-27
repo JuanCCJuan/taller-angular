@@ -1,0 +1,58 @@
+/* VARIABLES */
+:root {
+    --cherry: #F7022A;
+    --switch-cherry: #AD011D;
+}
+
+/* COMPONENTE */
+.card {
+    padding: 2rem;
+    width: 27.5rem;
+    height: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px 0px rgba(144,144,144,1);
+
+    .card__imagen {
+        border-radius: 1rem;
+        border: 0.1rem solid #d7d7d7;
+    }
+
+    .card__titulo {
+        font-size: 2rem;
+    }
+
+    .card__parrafo {
+        font-size: 1.2rem;
+    }
+
+    .card__boton {
+        margin: 1rem 0 0.5rem;
+        padding: 0.7rem 2rem;
+        color: #FFF;
+        text-transform: capitalize;
+        width: auto;
+        border: none;
+        border-radius: 3rem;
+        background-color: #F7022A;
+        transition: 0.1s;
+    }
+    
+    .card__boton:hover {
+        background-color: #AD011D;
+    }
+    
+    .card__boton:active {
+        transform: scale(1.1);
+    }
+}
+
+.card > * {
+    width: 100%;
+}

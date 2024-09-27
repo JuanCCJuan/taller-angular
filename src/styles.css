@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+/* GLOBALES */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* border: 0.1rem solid #000; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #C6E2E9;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* FUNCIONALIDADES */
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COMPONENTES */
+app-root {
+    gap: 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
