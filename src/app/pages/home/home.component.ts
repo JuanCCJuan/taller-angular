@@ -9,11 +9,12 @@ import { Component, Input } from '@angular/core';
 })
 
 export class HomeComponent {
-  @Input() imagen!      : string;
-  @Input() nombre!      : string;
+  mostrar: boolean = false;
+  @Input() imagen! : string;
+  @Input() nombre! : string;
   @Input() descripcion! : string;
 
   handleClick = () => {
-    alert(this.nombre);
+    this.mostrar = !this.mostrar;
   }
 }

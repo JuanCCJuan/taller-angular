@@ -8,12 +8,12 @@
 .card {
     padding: 2rem;
     width: 27.5rem;
-    height: 100%;
+    height: 45rem;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 1rem;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: #FFF;

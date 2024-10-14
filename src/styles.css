@@ -30,8 +30,5 @@ button:hover {
 
 /* COMPONENTES */
 app-root {
-    gap: 2rem;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
