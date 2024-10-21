@@ -1,58 +1,66 @@
-/* VARIABLES */
-:root {
-    --cherry: #F7022A;
-    --switch-cherry: #AD011D;
-}
-
 /* COMPONENTE */
-.card {
-    padding: 2rem;
-    width: 27.5rem;
-    height: 45rem;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    background-color: #FFF;
-    box-shadow: 1px 1px 5px 0px rgba(144,144,144,1);
-
-    .card__imagen {
-        border-radius: 1rem;
-        border: 0.1rem solid #d7d7d7;
-    }
-
-    .card__titulo {
-        font-size: 2rem;
-    }
-
-    .card__parrafo {
-        font-size: 1.2rem;
-    }
-
-    .card__boton {
-        margin: 1rem 0 0.5rem;
-        padding: 0.7rem 2rem;
-        color: #FFF;
-        text-transform: capitalize;
-        width: auto;
-        border: none;
-        border-radius: 3rem;
-        background-color: #F7022A;
-        transition: 0.1s;
-    }
-    
-    .card__boton:hover {
-        background-color: #AD011D;
-    }
-    
-    .card__boton:active {
-        transform: scale(1.1);
-    }
+.contenedor {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.card > * {
+.formulario {
+    gap: 1.2rem;
+    width: fit-content;
+    flex-direction: column;
+    padding: 1.5rem 1.2rem;
+    border-radius: 0.75rem;
+    background-color: var(--negro);
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,1);
+}
+
+.formulario > * {
     width: 100%;
+}
+
+.formulario__titulo {
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--blanco);
+    letter-spacing: -0.5px;
+}
+
+.campo {
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.campo > * {
+    width: 100%;
+}
+
+.campo__nombre {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    align-self: flex-start;
+    letter-spacing: -0.5px;
+}
+
+.campo__entrada {
+    outline: none;
+    padding: 0.5rem;
+    caret-color: var(--blanco);
+    color: #909090 !important;
+    border: 1px solid var(--azul);
+    background-color: var(--negro) !important;
+    -webkit-text-fill-color: var(--blanco) !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--negro) inset !important;
+}
+
+.formulario__boton {
+    border: none;
+    font-weight: 100;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    color: var(--blanco);
+    margin: 1rem 0 0.5rem;
+    letter-spacing: -0.5px;
+    background-color: var(--azul);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

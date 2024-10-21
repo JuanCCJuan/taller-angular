@@ -1,8 +1,19 @@
-<div class="centrar card">
-    <img class="card__imagen" [src]="imagen" [alt]="nombre">
-    <h3 class="card__titulo">{{ nombre }}</h3>
-    @if(mostrar){
-        <p class="card__parrafo">{{ descripcion }}</p>
-    }
-    <button class="centrar card__boton" (click)="handleClick()">ver información</button>
+<div class="centrar contenedor">
+    <form class="centrar formulario">
+        <h3 class="formulario__titulo">Taller Angular</h3>
+
+        <div class="centrar campo">
+            <label class="campo__nombre" for="email">Email</label>
+
+            <input class="campo__entrada" type="email" name="email" placeholder="correo..." [(ngModel)]="email"/>
+        </div>
+
+        <div class="centrar campo">
+            <label class="campo__nombre" for="password">Contraseña</label>
+
+            <input class="campo__entrada" type="password" name="password" placeholder="contraseña.." [(ngModel)]="password"/>
+        </div>
+
+        <button class="formulario__boton" type="submit" (click)="login(email, password)">Ingresar</button>
+    </form>
 </div>

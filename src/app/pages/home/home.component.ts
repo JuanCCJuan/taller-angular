@@ -1,20 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'ui-home',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 
 export class HomeComponent {
-  mostrar: boolean = false;
-  @Input() imagen! : string;
-  @Input() nombre! : string;
-  @Input() descripcion! : string;
+  email: string = '';
+  password: string = '';
 
-  handleClick = () => {
-    this.mostrar = !this.mostrar;
+  login(user: string, password: string){
+    console.log(`${user} - ${password}`);
   }
 }
